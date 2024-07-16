@@ -19,6 +19,7 @@ body{
 
 h2{
     text-transform: uppercase;
+    
 }
 #balance{
     font-size: 1.5em;
@@ -53,4 +54,77 @@ h2{
 
 #expense{
     color: var(--expense);
+}
+
+.transaction-container{
+    margin-top: 30px;
+}
+#transaction{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#transaction li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: var(--box-shadow); 
+}
+
+#transaction li span{
+    display: inline-block;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    margin-right: 5px;
+}
+
+#transaction li button{
+    padding: 5px 10px 5px 10px;
+}
+#transaction li .income-amt{
+    background-color: var(--income);
+}
+#transaction li .expense-amt{
+    background-color: var(--expense);
+}
+
+.form-container{
+    margin-top: 30px;
+}
+.form-container form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-container form label{
+
+    padding: 5px;
+}
+.form-container form input{
+    height: 25px;
+    margin-bottom: 10px;
+
+}
+
+.form-container form button{
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 10px; 
+    color: white;
+}
+
+#incomeBtn{
+    background-color: var(--income);
+}
+
+#expenseBtn{
+    background-color: var(--expense);
 }
